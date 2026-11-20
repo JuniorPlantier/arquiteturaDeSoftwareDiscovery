@@ -1,0 +1,57 @@
+1-orgnaizar conteúdo
+2-adicionar e se aprofundar nas arquiteturas abaixo
+--
+	Arquitetura de Software
+Basicamente é a forma como a gente planeja a organização de um sistema.
+Como ficam seus componentes, como fica sua estrutura de pastas, o que vai ter cada uma, como eles irão se conversar. 
+Importante: as arquiteturas podem ser utilizada entre elas, por exemplo: 
+a ideia da arquiteutra de camadas é utilizada dentro do DDD, 
+uma API pode trabalhar numa arquieutra de cliente servidor, através de REST utilizando DDD para a separação em camadas.
+um software normalmente não é somente uma arquitetura. 
+
+	Client-Server 
+A mais utilizada. Exemplo: internet; Aquele sistema de telinha azul - de mercado, estoque etc;
+
+	REpresentational State Transfer (REST)
+Basicamente uma arquitetura que define o cliente solicitando um recruso através de um endpount e o server irá responder de acordo com o estado daquele recurso. 
+com base no verbo http criado, vc sabe q acção está executando.
+o status de retorno tem q dizer o que aconteceu
+normalmente os retornos são em: HTML, XML ou JSON (o mais usado)
+
+	Domain Driven Design (DDD)
+é uma arquitetura de software.
+como vamos separar as pastas, os arquivos, a lógica do sistema. 
+o DDD prega que devemos focar no domínio da aplicação q está sendo desenvolvida. ou seja, o sofware tem q representar de forma muito visual o que aquela área de negócio faz. tem q estar esplicito o que é a lógica do negócio.
+a lógica de negócio tem q estar completamente solta com o banco de dados, cache etc. 
+
+
+	Microservices
+O QUE É UM MICROSERVIÇO DE WORK?
+Lado bom: escalar pedações do sistema. Ou seja, escalo apenas os serviços que exigem mais recursos.
+Lado ruim: 	com muitos micros serviços, fica complicado gerir a comunicação entre eles e a interdependências, e tbm a rastreabilidade.
+
+	Component-based
+separação de compoentes na aplicação. ou seja, cada componente tem uma responsabilidade muito bem defnidida.
+reutilizar	
+qual é a diferença para microserviço?
+
+	Layered (camadas)
+define que software deve ser definido em camadas horizontais.
+camadas de: persistência de dados (conversa com o bd); database; business logic; 
+as camadas são idenpendentes uma das outras, são desacopladas;
+tbm é utilizada no DDD;
+
+
+	Publish-subscribe
+é a mesma coisa que event-driven?
+um serviço que publica uma mensagem
+e outro serviço para ler aquela mensagem.
+estamos falando de fila.
+o FIFO deixa mais lento?
+e o webhook?
+request assincronas. 
+mensagem de callback
+aqui tbm tem worker? o que seria um worker?	
+
+
+
